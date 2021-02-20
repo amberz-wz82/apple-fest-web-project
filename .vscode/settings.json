@@ -1,0 +1,9 @@
+{
+    "explorer.openEditors.visible": 0,
+    "editor.wordWrap": "on",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.enableExperiments": false,
+    "intelephense.environment.phpVersion": "7.0.0"
+}
