@@ -12,22 +12,22 @@ Be clear and concise in your writing. Bullets points are encouraged.
 ### Existing Site: The Site (Milestone 1)
 > What is your existing site about? Tell us about it.
 
-TODO (Do not write your answer with a > before it. Otherwise your answer and the question render in the same massive paragraph in markdown preview making it insanely difficult to grade. Please be nice to your graders and make sure your answers don't render on the same line as the question in Markdown Preview. Please delete this text.)
+My existing site is about the 2020 Ithaca Apple Festival, specifically its information about time, location, transportation, shops, and restaurants, etc. The site also contains a feedback form where the user can submit feedbacks about the festival or the site.
 
 > How and where did you create this site?
 
-TODO
+I created this site last semester as Project 3 in the course INFO 1300.
 
 > Is this site designed for desktop, mobile devices or both?
 
-TODO
+This site is responsive for both.
 
 
 ### Existing Site: Audience (Milestone 1)
 > Who is your _existing_ site's audience?
 > Briefly explain who the intended audience(s) is for your website. Be specific and justify why this audience is appropriate for your site. Remember, you may not be the audience.
 
-TODO
+The intended audience for this website is the freshmen population at Cornell who wish to go to the Ithaca Apple Fest. They have just come to Cornell and have not yet explored events happening around Ithaca. This site would be a perfect guide for them to gain more information about one of the biggest events happening every year, including information about how to get to the location or what fun activities to do at the Fest.
 
 
 ### Existing Site: Audience Needs (Milestone 1)
@@ -35,22 +35,38 @@ TODO
 > List each need below. There is no specific number of needs required for this, but you need enough to do the job.
 > You may copy these from your previous project. However, I would encourage you to refine them.
 
-Need/Want 1: TODO: Brief Title
+Need/Want 1: Map of the Fest
 - **Needs and Wants** _What does your client and audience need and want?_
-  - TODO
+  - My audience needs a clearly labeled map of the Apple Fest in order to navigate around the festival and find shops or restaurants they desire to visit without getting lost.
 - **Design Ideas and Choices** _How will you meet those needs and wants?_
-  - TODO
+  - I will meet the needs by including a page of the festival map with locations and vendors clearly labeled. The page should be very easy to access to from the homepage of the site (preferably as a tab in the navigation bar), since the users will refer to this map very often during the Fest.
 - **Rationale & Additional Notes** _Justify your decisions; additional notes._
-  - TODO
+  - The audience will be able to check the map before the festival to plan out routes of activities they would like to do. They will also be able to conveniently access the map on the day of the Fest to check their locations and nearby vendors to visit.
 
-Need/Want 2: TODO
-TODO
+Need/Want 2: Shops and Restaurants
+- **Needs and Wants** _What does your client and audience need and want?_
+  - My audience would want to see a list of shops and restaurants at the Apple Fest so that they can plan beforehand what they would like to do on the day of the festival. Using this list with the map provided, they can easily plan out a route to follow to visit the vendors that interest them.
+- **Design Ideas and Choices** _How will you meet those needs and wants?_
+  - I will include a comprehensive list of shops and restaurants at the Fest as a page on my website, where the users will be able to read through and decide for themselves which vendors interest them. The descriptions will include the vendors' locations, which are referred to on the festival map.
+- **Rationale & Additional Notes** _Justify your decisions; additional notes._
+  - This list is for the users to browse at home before they go to the Apple Fest, when they can read through the vendors and decide their routes. It will also be used on the day of the Fest when users change their mind and wish to visit other vendors that attract them. Therefore this page is responsive to both desktop and mobile screens.
 
-Need/Want 3: TODO
-TODO
+Need/Want 3: Transportation to the festival
+- **Needs and Wants** _What does your client and audience need and want?_
+  - My audience will need to know ways to get to the Apple Fest. Since my audience will be Cornell freshmen, most of them do not own a car. They will need to know means to go to the festival on their own.
+- **Design Ideas and Choices** _How will you meet those needs and wants?_
+  - I will include a page with a map of the address and location of the festival, as well as a link to the TCAT bus website to help users who need take public transportation to plan their trip from their place to the festival. I will include the hours that TCAT is running and also some tips for my audience to transport from their dorms on North Campus to downtown.
+  - For users who own a car, I will include a list of parking places where the users can park their vehicles and have a short walk to the festival. I will include the parking rates and hours.
+- **Rationale & Additional Notes** _Justify your decisions; additional notes._
+  -This design will accommodate both kinds of users using different transportation means. Bus routes for freshmen to travel to and from the festival might be the most helpful for my intended audience. They will likely visit this page when planning beforehand and on the day to the festival.
 
-etc.
-
+Need/Want 4: Feedback Form
+- **Needs and Wants** _What does your client and audience need and want?_
+  - My audience will need a way to submit their feedbacks or issues encountered at the Fest so that they can solve any problems occurred or help make future festivals become better.
+- **Design Ideas and Choices** _How will you meet those needs and wants?_
+  - I will include a feedback form on the site where users can submit their name, date of visit, any positive or negative feedbacks, any issues encountered, and their contact information. This way the users may be contacted if any issues need to be resolved, and through the feedbacks the Fest or this site could be improved for the future. The form is designed to be well aligned, short, and straightforward so that users do not get impatient when filling out the form.
+- **Rationale & Additional Notes** _Justify your decisions; additional notes._
+  - This form is meant for users to fill out after going to the Apple Fest. They can be filled out on desktop screens or conveniently on mobile screens on their way back from the festival.
 
 ### Existing Site: Design/Sketches (Milestone 1)
 > Sketch your existing site. Include these sketches here.
@@ -58,8 +74,20 @@ etc.
 > Create new sketches here. This is part of the design process to get you thinking about the strengths/weaknesses of the current design.
 > Provide a brief explanation _underneath_ each sketch.
 
-TODO
-(Don't know how to "link" images, review the Markdown documentation. Delete this text.)
+![My About page](about.jpeg)
+This is a sketch of my About page where basic information about the Fest is provided.
+
+![My Map page](map.jpeg)
+This is a sketch of my Map page where a festival map with vendors labeled is provided.
+
+![My Shop & Dine page](vendors.jpeg)
+This is a sketch of my Shop & Dine page where the information about all vendors is provided.
+
+![My Directions page](transport.jpeg)
+This is a sketch of my Directions page where information about ways to travel to the Fest is provided.
+
+![My Feedback Form page](form.jpeg)
+This is a sketch of my Feedback Form page where users can submit their feedbacks about the Fest or this site.
 
 
 ### Refined Site: Persona (Milestone 1)
@@ -68,45 +96,63 @@ TODO
 > There is no required format for the persona.
 > You may type out the persona below with bullet points or include an image of the persona. Just make sure it's easy to read the persona when previewing markdown.
 
-Persona's Name: TODO
+Persona's Name: Heather
 
-TODO (the rest of the persona)
+![Persona: Heather](heather.jpeg)
 
+Heather is a female Cornell freshman majoring in Biology and Society in A&S and lives on North Campus in Mary Donlon Hall. She is originally from Los Angeles, CA. This is her first time living away from home and from the warm California sun, and she cannot wait to enjoy the seasons here in Ithaca.
+She heard about the Apple Fest in Ithaca a while ago before started college, and she cannot wait to go visit the festival with a group of friends living near her.
+She does not own a car and relies on TCAT buses to transport everywhere (she has a TCAT pass). She needs to know how to transport to the Fest using TCAT, as she is still new to the local area.
+She owns a laptop and a phone to look up information about the festival, and she has access to the internet while on Cornell campus.
+She has a prelim coming up soon in mid-October, and she wants to know if she has time to go to the Fest. She wishes to spend a whole day at the festival.
+She wants to taste some of the local Ithaca food and buy some souvenirs to bring back to friends and family.
+She does not have a good sense of directions and often gets lost even in her own community.
+She wishes to have someone to contact if she loses her precious bracelet at the Fest.
 
 ### Refined Site: Content Organization/Navigation (Milestone 1)
 > Identify the content that is necessary for your persona. **Refer to the persona by name.**
 > List the content here. Label the content as "(new)" if it's new to the existing site.
 > **Don't forget to include the form.**
 
-- (Example) Cornell Admissions Process (delete this line)
-- (Example) Cornell Admission Stats (new) (delete this line)
-- TODO
-- TODO
-- ...
+- Date and time of the Fest
+- Location and address of the Fest
+- Map of the Fest for navigation
+- List of vendors to shop and dine
+- Sample photos of food and souvenirs
+- Public transportation directions to the Fest
+- Driving directions to the Fest
+- A feedback form for reviews
 
 
 > Organize the content for the audience and identify possible pages for the content using card sorting.
 > Document your card sorting by taking a photo and including it here.
 > You are **required** to show the alternative organization you considered. (1 card sorting is not enough)
 
-TODO
-
+![Card sorting 1](cardsort1.jpeg)
+This is my cardsort1.
+![Card sorting 2](cardsort2.jpeg)
+This is my cardsort2.
 
 > Explain your thought process behind the card sorting. **Refer to the persona by name in your explanation.**
 
-TODO
+Heather would want to first know the date and time of the Fest to see if she can go on one of those days. She needs the transportation means to know how to get to the festival, and she needs a map to navigate around the Fest. In cardsort2 I grouped the date and time with the vendors list so that Heather can plan whether she can go visit some of the shops during the time she is available. She can also see some sample food and souvenirs that interest her on this page. I also grouped location and transportation directions together in cardsort2 to help Heather navigate to the festival from North Campus. The map of the festival is separately placed on one page to help her find her way around the festival, since she does not have a good sense of direction. She can also use the feedback form on another separate page in case she loses her bracelet and needs to contact the festival's hosts. In cardsort1, I regrouped date, time, and location of the Fest to one page because these are more of the general information about the festival, and Heather could see if she has enough time to travel to downtown on a day of the Fest. I included the transportation means on a separate page so that Heather can pre-decide her travel route to the Fest. The list of vendors and photos are naturally grouped together for Heather to browse before and during the Fest. The feedback form in cardsort1 is still on a separate page for reviews after going to the Fest.
 
 
 > Lastly, list the pages that resulted from your final card sort (i.e. your site's navigation) and content for each page.
 
-- (Example) Home (delete these example lines)
-  - (Example) List of colleges
-  - (Example) New research
-- (Example) Admissions
-  - (Example) admissions criteria
-- TODO
-- TODO
-- ...
+- About
+  - Date and time
+  - Location and address
+- Map of the Fest
+  - Fest map with labeled vendors
+- Shop & Dine
+  - List of vendors and their descriptions
+  - Sample photos of food and souvenirs
+- Directions
+  - Public transportation routes and link to TCAT website
+  - Driving directions to the Fest
+- Feedback
+  - A form for feedback of the Fest or this site and contact means in case of any issues
 
 
 ### Refined Site: Design (Milestone 1)
@@ -117,15 +163,34 @@ TODO
 > Don't forget the form and confirmation page!
 > **Refer to your persona by name in each explanation.**
 
-TODO
+I designed my site according to my card sorting 1. I have added some additional elements to fit the users' needs better, such as those of Heather.
+
+![My About page](about2.jpeg)
+This is a refined sketch of my About page where basic information about the Fest is provided. I added the location and address of the Fest on the About page under date and time of the Fest.
+
+![My Map page](map.jpeg)
+This is a sketch of my Map page where a festival map with vendors labeled is provided.
+
+![My Shop & Dine page](vendors2.jpeg)
+This is a refined sketch of my Shop & Dine page where the information about all vendors is provided. I added more photos of food and souvenirs for Heather to browse to make her looking forward to go to the Fest.
+
+![My Directions page](transport.jpeg)
+This is a sketch of my Directions page where information about ways to travel to the Fest is provided.
+
+![My Feedback Form page](form.jpeg)
+This is a sketch of my Feedback Form page where users can submit their feedbacks about the Fest or this site.
 
 
 ### Partial Plan (Milestone 1)
 > Using your refined sketches, plan your site's partials.
 > You may describe each partial or sketch it. It's up to you!
 
-TODO
-
+- Partial 1: Header
+  - Each page's header is the same, so it would be easier to put them in a single partial and include it with PHP.
+- Partial 2: Navigation bar
+  - Each page's navigation bar is the same and thus can be a partial. However I will include variables in the partial so that the current page on the navigation bar is highlighted when the users navigate to that page.
+- Partial 3: Footer
+  - The footer is the same on all pages and can be written as one partial to be included using PHP.
 
 
 ## Sticky Form (Milestone 2)
