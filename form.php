@@ -87,10 +87,6 @@ if (isset($_POST["submit"])) {
   <title>Apple Harvest Festival</title>
 
   <link rel="stylesheet" type="text/css" href="styles/theme.css" media="all"/>
-
-  <script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>
-  <script src="scripts/validation.js" type="text/javascript" async></script>
-
 </head>
 <body>
     <?php include("includes/header.php"); ?>
@@ -100,7 +96,7 @@ if (isset($_POST["submit"])) {
     <h2 class="title">Feedback Form</h2>
 
     <section class="confirmation <?php echo $confirmation_css_class; ?>">
-      <h3>Feedback Form Submission Confirmation</h3>
+      <h3 class="alignMiddle">Feedback Submission Confirmation</h3>
       <p>Thank you <strong><?php echo htmlspecialchars($name); ?></strong>! Your opinion is very valuable to us, and we can't wait to read your feedback about improving our future Apple Festivals!</p>
       <p>If you experienced any issues at the festival, don't worry! We will contact you within the next 24 hours through email.</p>
     </section>
@@ -125,12 +121,12 @@ if (isset($_POST["submit"])) {
         <div id="experienceFeedback" class="feedback hidden red <?php echo $feedback_feedback_class; ?>">*Please give us any feedback about the festival.</div>
         <div class="label-input-pair">
           <label for="experience">*Tell us what you enjoyed/what we can improve on the festival or this site (transportations, navigation, customer experiences, etc.):</label>
-          <textarea cols="36" rows="8" id="experience" name="feedback" value = "<?php echo htmlspecialchars($sticky_feedback); ?>" required></textarea>
+          <textarea cols="36" rows="8" id="experience" name="feedback" required><?php echo htmlspecialchars($sticky_feedback); ?></textarea>
         </div>
 
         <div class="label-input-pair">
           <label for="issues">Were there any issues that you encountered and would like further assistance?</label>
-          <textarea cols="36" rows="8" id="issues" name="issues" value = "<?php echo htmlspecialchars($sticky_issues); ?>"></textarea>
+          <textarea cols="36" rows="8" id="issues" name="issues"><?php echo htmlspecialchars($sticky_issues); ?></textarea>
         </div>
 
         <div id="emailFeedback" class="feedback hidden red <?php echo $email_feedback_class; ?>">Please enter a valid email address.</div>
