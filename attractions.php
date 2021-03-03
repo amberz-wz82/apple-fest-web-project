@@ -1,3 +1,4 @@
+<?php include("includes/init.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,21 +11,9 @@
 
 </head>
 <body>
-    <header>
-        <a name="top"></a>
-        <h1>Apple Harvest Festival</h1>
-        <p class="hide">Welcome to Ithaca's annual Apple Harvest Festival!</p>
-    </header>
+    <?php include("includes/header.php"); ?>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="map.html">Fest Map</a></li>
-            <li><a href="attractions.html">Shop & Dine</a></li>
-            <li><a href="transport.html">Directions</a></li>
-            <li><a href="form.html">Feedback</a></li>
-        </ul>
-    </nav>
+    <?php include("includes/nav.php"); ?>
 
     <a name="shop-list"></a>
     <h2 class="title">Apple & Cider Trail: Shops & Restaurants</h2>
@@ -71,11 +60,20 @@
             <a href="https://cdn.shopify.com/s/files/1/2781/2718/products/burntorange_1296x.jpg?v=1594580824" class="important-source">American Crafts by Robbin Dein</a>
         </div>
     </div>
+    <div class="shops-img">
+        <div class="dish">
+            <!-- Source: https://images.squarespace-cdn.com/content/v1/5f7dafc81aaa1c6e9594f8e8/1612550572261-265IKTZ889BPU7YXD82Y/ke17ZwdGBToddI8pDm48kO0Lvo78Y4OoNybdytlZZW57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmW5SZw0zY0wEgct1jJcv4nGNwBLhRiylRhKh2zBlinqFXFeRww6SDgXqHlGZQ01_V/image-asset.jpeg?format=750w -->
+            <img src="images/embers.jpeg" alt="Macaroons at Sparks & Embers" width="280" height="300" class="img-size"/>
+            <a href="https://images.squarespace-cdn.com/content/v1/5f7dafc81aaa1c6e9594f8e8/1612550572261-265IKTZ889BPU7YXD82Y/ke17ZwdGBToddI8pDm48kO0Lvo78Y4OoNybdytlZZW57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmW5SZw0zY0wEgct1jJcv4nGNwBLhRiylRhKh2zBlinqFXFeRww6SDgXqHlGZQ01_V/image-asset.jpeg?format=750w" class="important-source">Sparks and Embers.co</a>
+        </div>
+        <div class="glass">
+            <!-- Source: https://images.squarespace-cdn.com/content/v1/5bedb481266c07c878b19303/1542563641599-PC62QIZLCJGK4AH2GU6Q/ke17ZwdGBToddI8pDm48kGTzyrT8DWxMzQ3fkEzYLRZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0oGwQPSn8VqSSM4mc7rOnoiO5fjsE4ow2aUP6DJE0-ZidEVxSvDhQ8kB9BE8_RPAYA/mamsaidhandpies.jpg?format=2500w -->
+            <img src="images/pies.jpg" alt="Mama Said Hand Pies" width="500" height="300" class="img-size">
+            <a href="https://images.squarespace-cdn.com/content/v1/5bedb481266c07c878b19303/1542563641599-PC62QIZLCJGK4AH2GU6Q/ke17ZwdGBToddI8pDm48kGTzyrT8DWxMzQ3fkEzYLRZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0oGwQPSn8VqSSM4mc7rOnoiO5fjsE4ow2aUP6DJE0-ZidEVxSvDhQ8kB9BE8_RPAYA/mamsaidhandpies.jpg?format=2500w" class="important-source">Mama Said Hand Pies</a>
+        </div>
+    </div>
 
-    <footer>
-        <h4>Thank you for visiting us!</h4>
-        <a href="#top" class="top">Return to top</a>
-    </footer>
+    <?php include("includes/footer.php"); ?>
 
 </body>
 </html>

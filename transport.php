@@ -1,3 +1,4 @@
+<?php include("includes/init.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,21 +11,9 @@
 
 </head>
 <body>
-    <header>
-        <a name="top"></a>
-        <h1>Apple Harvest Festival</h1>
-        <p class="hide">Welcome to Ithaca's annual Apple Harvest Festival!</p>
-    </header>
+    <?php include("includes/header.php"); ?>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="map.html">Fest Map</a></li>
-            <li><a href="attractions.html">Shop & Dine</a></li>
-            <li><a href="transport.html">Directions</a></li>
-            <li><a href="form.html">Feedback</a></li>
-        </ul>
-    </nav>
+    <?php include("includes/nav.php"); ?>
 
 
     <h2 class="title">Transportations & Directions</h2>
@@ -68,10 +57,7 @@
         <a href="https://www.downtownithaca.com/apple-festive" class="leftleft-source">Source</a>
     </div>
 
-    <footer>
-        <h4>Thank you for visiting us!</h4>
-        <a href="#top" class="top">Return to top</a>
-    </footer>
+    <?php include("includes/footer.php"); ?>
 
 </body>
 </html>

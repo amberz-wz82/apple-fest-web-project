@@ -319,8 +319,8 @@ p.link-to-map {
 .shops-img {
   display: flex;
   flex-direction: row;
-  width: 90%;
-  margin: 0 auto;
+  width: 80%;
+  margin: auto;
 }
 
 .dish img {
@@ -426,7 +426,12 @@ form {
   margin-bottom: -13px;
 }
 
-.hideFeedback {
+.confirmation {
+  width: 80%;
+  margin: auto;
+}
+
+.hidden {
   display: none !important;
 }
 

@@ -198,26 +198,101 @@ This is a sketch of my Feedback Form page where users can submit their feedbacks
 ### Sticky Form Planning (Milestone 2)
 > What controls do you need for your form?
 
-TODO
+I need a name input (required), date of visit input (required), two feedback textboxes (first one is required), an email input, and a submit button.
 
 
 > Plan out your feedback messages for your form. You may sketch (probably the easiest) or write it out.
 > Use your persona. Refer to the persona by name. Explain how the feedback messages are usable for your persona.
 
-TODO
+![Feedback messages for my feedback form](form-feedback.jpeg)
 
+- After going to the Apple Fest, if Heather has not enjoyed some of her experience at the festival, she can fill out the feedback form. She has to enter her name and date of visit. If she doesn't input her name and date of visit, she will get feedbacks telling her to enter full name and when she went to the Fest (between 9/28/2020 and 10/04/2020).
+- Heather also has to provide a feedback she has. If Heather submits the form without filling out her experience, she will get the feedback message saying "*Please give us any feedback about the festival." Heather will then know to provide some feedback.
+- If Heather had problems needs to be solved coming back from the Fest, she can fill out any issues she encountered (not required). If she wishes to be contacted about her issue, she will need to provide a valid email address, or she will get a feedback message saying "Please enter a valid email address."
 
 > How does this form meet the needs of your persona?
 > Refer to the persona by name.
 
-TODO
+- Maybe when heading to the festival Heather could not find her way from the bus stop she arrived at to the Commons, and she wishes to have more direction signs at the Fest to guide her. Her date of visit and feedback would be useful for the festival hosts to know about, so submitting her answers in the feedback form will help improving the audience's experience in future Apple Fests. The following year when Heather come to the festival again she will not get lost.
+- If Heather has been careless and loses her precious bracelet at the festival, she can fill out her problem in the issues input, and by providing her name, date of visit, and a valid email address, she can be contacted if her bracelet has been found at the festival. Heather will then be happy that she has her bracelet again.
 
 
 ### Validation Code Plan (Milestone 2)
 > Write out your pseudocode plan for handling the validation of the form.
 
 ```
-TODO: WRITE YOUR PSEUDOCODE HERE, between the back-tick lines.
+<?php
+// set up values for user inputs
+$name = '';
+$date = '';
+$feedback = '';
+$issues = '';
+$email = '';
+
+// set up sticky values for user inputs
+$sticky_name = '';
+$sticky_date = '';
+$sticky_feedback = '';
+$sticky_issues = '';
+$sticky_email = '';
+
+// form CSS classes for the form and the confirmation page
+$form_css_class = ''; // show form for default
+$confirmation_css_class = 'hidden'; // hide confirmation page for default
+
+// set feedback message CSS classes to hidden for default
+$name_feedback_class = 'hidden';
+$date_feedback_class = 'hidden';
+$feedback_feedback_class = 'hidden';
+$email_feedback_class = 'hidden';
+
+// Did the user submit the form?
+if user submitted {
+
+  // Store user's data in variables set up earlier
+  $name = $_POST["name"]; // untrusted
+  $date = $_POST["date"]; // untrusted
+  $feedback = $_POST["feedback"]; // untrusted
+  $issues = $_POST["issues"]; // untrusted
+  $email = $_POST["email"]; // untrusted
+
+  // Set form's validity to TRUE for default
+  $form_valid = TRUE;
+
+  // name is required. Is it empty?
+  if name is empty {
+    $form_valid = FALSE; // set form validity to false
+    $name_feedback_class = ''; // show name input's feedback message
+  }
+  // date is required. Is it empty?
+  if date is empty {
+    $form_valid = FALSE; // set form validity to false
+    $date_feedback_class = ''; // show date input's feedback message
+  }
+  // feedback is required. Is it empty?
+  if feedback is empty {
+    $form_valid = FALSE; // set form validity to false
+    $feedback_feedback_class = ''; // show feedback input's feedback message
+  }
+  // email has to be valid. Is it valid?
+  if email is not valid {
+    $form_valid = FALSE; // set form validity to false
+    $feedback_feedback_class = ''; // show email input's feedback message
+  }
+
+  if form is valid {
+    $confirmation_css_class = ''; // show confirmation page
+    $form_css_class = 'hidden'; // hide the feedback form
+  } else {
+    // if form is invalid, set sticky values
+    $sticky_name = $name;  // tainted
+    $sticky_date = $date; // tainted
+    $sticky_feedback = $feedback; // tainted
+    $sticky_issues = $issues; // tainted
+    $sticky_email = $email; // tainted
+  }
+}
+?>
 ```
 
 
