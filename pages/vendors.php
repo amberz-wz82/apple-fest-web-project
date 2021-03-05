@@ -32,7 +32,7 @@
     </div>
     <a href="https://www.downtownithaca.com/wp-content/uploads/Apple-Festive-Trail_2020-1.pdf" class="important-source red">For a better read of the image, click here.</a>
     <p class="link-to-map">
-        <em>Wants to see where each shop and restaurant is located in Downtown Ithaca? Check out the <a href="map.html#map" class="red">Fest Map</a> to see their locations!</em>
+        <em>Wants to see where each shop and restaurant is located in Downtown Ithaca? Check out the <a href="map.php#map" class="red">Fest Map</a> to see their locations!</em>
     </p>
     <div class="row">
         <p class="middle">

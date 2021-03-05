@@ -29,12 +29,12 @@
             <p class="time">
                 Location: at The Commons on E State St.
             </p>
-            <h4><a href="attractions.html" class="red">2020 Apple & Cider Trail</a> inside Shops & Restaurants around Downtown Ithaca</h4>
+            <h4><a href="pages/vendors.php" class="red">2020 Apple & Cider Trail</a> inside Shops & Restaurants around Downtown Ithaca</h4>
             <p class="time">
                 Monday, Sept. 28 - Oct. 4 | Store hours will vary
             </p>
             <p class="time">
-                Location: Check out Shop & Dine to see specific locations for each vendor.
+                Location: Check out <a href="pages/vendors.php" class="red">Shop & Dine</a> to see specific locations for each vendor.
             </p>
             <p class="time">
                 Shops and Restaurants will host seasonally inspired food, drinks, and gifts as well as fun events.

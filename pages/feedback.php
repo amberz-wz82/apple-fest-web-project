@@ -6,6 +6,7 @@ $date = '';
 $feedback = '';
 $issues = '';
 $email = '';
+$email_confirm = '';
 
 // set up sticky values for user inputs
 $sticky_name = '';
@@ -57,16 +58,19 @@ if (isset($_POST["submit"])) {
     $feedback_feedback_class = ''; // show feedback input's feedback message
   }
   // email has to be valid. Is it valid?
-  if ( !filter_var($email, FILTER_VALIDATE_EMAIL) ) {
+  if ( !empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL) ) {
     // if email is not valid
     $form_valid = FALSE; // set form validity to false
-    $feedback_feedback_class = ''; // show email input's feedback message
+    $email_feedback_class = ''; // show email input's feedback message
   }
 
   if ($form_valid) {
     // if form is valid
     $confirmation_css_class = ''; // show confirmation page
     $form_css_class = 'hidden'; // hide the feedback form
+    if ( !empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL) ) {
+      $email_confirm = " at $email";
+    }
   } else {
     // if form is invalid, set sticky values
     $sticky_name = $name;  // tainted
@@ -98,27 +102,27 @@ if (isset($_POST["submit"])) {
     <section class="confirmation <?php echo $confirmation_css_class; ?>">
       <h3 class="alignMiddle">Feedback Submission Confirmation</h3>
       <p>Thank you <strong><?php echo htmlspecialchars($name); ?></strong>! Your opinion is very valuable to us, and we can't wait to read your feedback about improving our future Apple Festivals!</p>
-      <p>If you experienced any issues at the festival, don't worry! We will contact you within the next 24 hours through email.</p>
+      <p>If you experienced any issues at the festival, don't worry! We will contact you within the next 24 hours through email<strong><?php echo htmlspecialchars($email_confirm); ?></strong>.</p>
     </section>
 
     <section class="<?php echo $form_css_class; ?>">
       <h3 class="alignMiddle">Please provide any feedback you have for us!</h3>
       <p class="red alignMiddle">*Required Field</p>
 
-      <form id="feedbackForm" method="post" action="form.php" novalidate>
-        <div id="nameFeedback" class="feedback hidden red <?php echo $name_feedback_class; ?>">*Please enter your full name.</div>
+      <form id="feedbackForm" method="post" action="pages/feedback.php" novalidate>
+        <div id="nameFeedback" class="feedback red <?php echo $name_feedback_class; ?>">*Please enter your full name.</div>
         <div class="label-input-pair">
           <label for="name" class="middleLabel">*Name:</label>
           <input type="text" name="name" id="name" value = "<?php echo htmlspecialchars($sticky_name); ?>" required/>
         </div>
 
-        <div id="dateFeedback" class="feedback hidden red <?php echo $date_feedback_class; ?>">*Please enter a date between 9/28/2020 and 10/04/2020.</div>
+        <div id="dateFeedback" class="feedback red <?php echo $date_feedback_class; ?>">*Please enter a date between 9/28/2020 and 10/04/2020.</div>
         <div class="label-input-pair">
           <label for="date" class="middleLabel">*Date of Visit:</label>
           <input type="date" name="date" id="date" value = "<?php echo htmlspecialchars($sticky_date); ?>" required/>
         </div>
 
-        <div id="experienceFeedback" class="feedback hidden red <?php echo $feedback_feedback_class; ?>">*Please give us any feedback about the festival.</div>
+        <div id="experienceFeedback" class="feedback red <?php echo $feedback_feedback_class; ?>">*Please give us any feedback about the festival.</div>
         <div class="label-input-pair">
           <label for="experience">*Tell us what you enjoyed/what we can improve on the festival or this site (transportations, navigation, customer experiences, etc.):</label>
           <textarea cols="36" rows="8" id="experience" name="feedback" required><?php echo htmlspecialchars($sticky_feedback); ?></textarea>
@@ -129,7 +133,7 @@ if (isset($_POST["submit"])) {
           <textarea cols="36" rows="8" id="issues" name="issues"><?php echo htmlspecialchars($sticky_issues); ?></textarea>
         </div>
 
-        <div id="emailFeedback" class="feedback hidden red <?php echo $email_feedback_class; ?>">Please enter a valid email address.</div>
+        <div id="emailFeedback" class="feedback red <?php echo $email_feedback_class; ?>">Please enter a valid email address.</div>
         <div class="label-input-pair">
           <label for="email">If you wish to be contacted about your issue, enter your email:</label>
           <input type="email" name="email" id="email" value = "<?php echo htmlspecialchars($sticky_email); ?>"/>

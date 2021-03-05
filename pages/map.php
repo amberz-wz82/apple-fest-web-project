@@ -23,7 +23,7 @@
     <div class="cider-trail">
         <div class="cider-trail-text">
             <p class="large">
-                <em>Apple & Cider Trail now available!  For products and events in specific shops and restaurants, see <a href="attractions.html#shop-list" class="red">Shop & Dine</a>.</em>
+                <em>Apple & Cider Trail now available!  For products and events in specific shops and restaurants, see <a href="vendors.php#shop-list" class="red">Shop & Dine</a>.</em>
             </p>
             <p class="large">
                 Simply check out the map & make your plans, and let the fruitful week get started.  Snap a photo of your experiences throughout the week and share them with us via Instagram or Facebook.  Tag us <em class="hashtag">@downtownithaca</em> and hashtag it <em class="hashtag">#FeelingAppleFestive</em> to enter to win.  No purchase necessary to participate.
