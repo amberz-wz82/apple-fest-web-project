@@ -1,4 +1,8 @@
-<?php include("includes/init.php"); ?>
+<?php
+include("includes/init.php");
+$nav_home_class = "current_page";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,7 @@
 
   <title>Apple Harvest Festival</title>
 
-  <link rel="stylesheet" type="text/css" href="styles/theme.css" media="all"/>
+  <link rel="stylesheet" type="text/css" href="public/styles/theme.css" media="all"/>
 
 </head>
 <body>
@@ -29,12 +33,12 @@
             <p class="time">
                 Location: at The Commons on E State St.
             </p>
-            <h4><a href="pages/vendors.php" class="red">2020 Apple & Cider Trail</a> inside Shops & Restaurants around Downtown Ithaca</h4>
+            <h4><a href="/vendors" class="red">2020 Apple & Cider Trail</a> inside Shops & Restaurants around Downtown Ithaca</h4>
             <p class="time">
                 Monday, Sept. 28 - Oct. 4 | Store hours will vary
             </p>
             <p class="time">
-                Location: Check out <a href="pages/vendors.php" class="red">Shop & Dine</a> to see specific locations for each vendor.
+                Location: Check out <a href="/vendors" class="red">Shop & Dine</a> to see specific locations for each vendor.
             </p>
             <p class="time">
                 Shops and Restaurants will host seasonally inspired food, drinks, and gifts as well as fun events.
@@ -42,7 +46,7 @@
         </div>
         <div class="juice hide">
             <!-- Source: https://www.downtownithaca.com/wp-content/uploads/AppleFest_CM-18-1.jpg -->
-            <img src="images/juice.jpg" alt="Apple Juice" width="240" height="370"/>
+            <img src="public/images/juice.jpg" alt="Apple Juice" width="240" height="370"/>
             <a href="https://www.downtownithaca.com/wp-content/uploads/AppleFest_CM-18-1.jpg" class="rightright-source">Source</a>
         </div>
     </div>
@@ -50,10 +54,10 @@
     <div class="homepage">
         <div class="home-images">
             <!-- Source: https://www.downtownithaca.com/wp-content/uploads/AppleHarvest_Market.jpg -->
-            <img src="images/products.jpg" alt="Apple Harvest Festival" width="500" height="300" class="img-size"/>
+            <img src="public/images/products.jpg" alt="Apple Harvest Festival" width="500" height="300" class="img-size"/>
             <a href="https://www.downtownithaca.com/wp-content/uploads/AppleHarvest_Market.jpg" class="source">Source</a>
             <!-- Source: https://www.downtownithaca.com/wp-content/uploads/Eve_cidery.jpg -->
-            <img src="images/cider.jpg" alt="Apple Harvest Festival" width="500" height="300" class="img-size"/>
+            <img src="public/images/cider.jpg" alt="Apple Harvest Festival" width="500" height="300" class="img-size"/>
             <a href="https://www.downtownithaca.com/wp-content/uploads/Eve_cidery.jpg" class="source">Source</a>
         </div>
         <div class="paragraph">
@@ -81,7 +85,7 @@
             The Apple Festive is made possible thanks to generous support by our title sponsor:
         </p>
         <!-- Source: https://www.downtownithaca.com/wp-content/uploads/Copy-of-TTC.jpg -->
-        <img src="images/sponsor.jpg" alt="Apple Festive Sponsor" width="550" height="150" class="img-size"/>
+        <img src="public/images/sponsor.jpg" alt="Apple Festive Sponsor" width="550" height="150" class="img-size"/>
         <a href="https://www.downtownithaca.com/wp-content/uploads/Copy-of-TTC.jpg" class="right-source">Source</a>
         <h4>Thank you for visiting us!</h4>
         <a href="#top" class="top">Return to top</a>

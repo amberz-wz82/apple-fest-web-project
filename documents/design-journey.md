@@ -305,43 +305,45 @@ if user submitted {
 
 | Route | PHP File                            |
 | ----- | ----------------------------------- |
-| /     | pages/home.php (or pages/index.php) |
-| TODO  | TODO                                |
-| TODO  | TODO                                |
+| / or /home     | pages/index.php             |
+| /map         | pages/map.php                   |
+| /vendors      | pages/vendors.php               |
+| /directions    | pages/directions.php         |
+| /feedback      | pages/feedback.php             |
 
 
 ### Audience (Final Submission)
 > Tell us how your final site meets the needs of the audience. Be specific here. Tell us how you tailored your design, content, etc. to make your website usable for your persona. Refer to the persona by name.
 
-TODO
+I have made the website organized with the navigation bar clearly laid out and responsive to mouse hovers. Heather can simply navigate through the contents on the site with the information she needs, such as the festival map, the vendors for food and souvenirs, transportation methods, and the feedback form for any problems. She can clearly see which page she is on because I designed the navigation bar to highlight current page in a different color. Besides the site contents, if Heather carelessly navigates to a page that does not belong to the site, she will receive a friendly 404 not found page that looks just like the site's layout with the navigation bar present. This way she will feel like that she has stayed on the same site and did not navigate away, improving her user experience. She can always click on the nav bar to go back to the site. Specifically in the feedback form, I designed the form to be accessible and usable. If Heather were to fill out this form, she will get accurate feedback messages about required inputs, and her existing inputs would be sticky so that she does not have to refill them. After she successfully submits, she will get a confirmation message designed individually for her, addressing her name and email address, so she will be reassured that her problem, such as losing her precious bracelet, will be solved soon.
 
 
 ### Additional Design Justifications (Final Submission)
 > If you feel like you haven’t fully explained your design choices in the final submission, or you want to explain some functions in your site (e.g., if you feel like you make a special design choice which might not meet the final requirement), you can use the additional design justifications to justify your design choices. Remember, this is place for you to justify your design choices which you haven’t covered in the design journey. You don’t need to fill out this section if you think all design choices have been well explained in the design journey.
 
-TODO
+None
 
 
 ### Self-Reflection (Final Submission)
 > Reflect on what you learned during this assignment. How have you improved from 1300? What things did you have trouble with?
 
-TODO
+I learned how to implement both server-side and client-side form validations, especially validating inputs, sending back feedback messages, and making sticky forms using PHP. I also learned to write conditional statements in HTML to avoid hidden HTML scripts on web pages.
 
 ### Grading: Mobile or Desktop (Final Submission)
 > When we grade your final site, should we grade this with a mobile screen size or a desktop screen size?
 
-TODO
+Desktop screen size.
 
 
 ### Grading: Partials (Final Submission)
 > Clearly list each partial file and where you used it.
 
-- includes/init.php: configures PHP for 2300.
-- TODO
-- TODO
+- includes/init.php: stores variables for navigation bar classes.
+- includes/header.php: used for header of each page.
+- includes/nav.php: used for navigation bar of each page.
+- includes/footer.php: used for footer at the bottom of each page.
 
 
 > Which partials have customization? Explain how the customization looks in the browser.
 
-- Example: header.php shows a border around the current page (delete this line)
-- TODO
+- nav.php shows a different background color for the current page in navigation bar.

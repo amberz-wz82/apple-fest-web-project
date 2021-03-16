@@ -5,5 +5,11 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "workbench.enableExperiments": false,
-    "intelephense.environment.phpVersion": "7.0.0"
+    "intelephense.environment.phpVersion": "7.0.0",
+    "php-project.args": [
+        "-S",
+        "localhost:3000",
+        "router.php"
+    ],
+    "php-project.useNativeExecutablePath": false
 }

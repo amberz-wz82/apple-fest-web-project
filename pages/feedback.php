@@ -1,4 +1,7 @@
-<?php include("includes/init.php");
+<?php
+
+include("includes/init.php");
+$nav_feedback_class = "current_page";
 
 // set up values for user inputs
 $name = '';
@@ -90,7 +93,7 @@ if (isset($_POST["submit"])) {
 
   <title>Apple Harvest Festival</title>
 
-  <link rel="stylesheet" type="text/css" href="styles/theme.css" media="all"/>
+  <link rel="stylesheet" type="text/css" href="public/styles/theme.css" media="all"/>
 </head>
 <body>
     <?php include("includes/header.php"); ?>
@@ -109,23 +112,23 @@ if (isset($_POST["submit"])) {
       <h3 class="alignMiddle">Please provide any feedback you have for us!</h3>
       <p class="red alignMiddle">*Required Field</p>
 
-      <form id="feedbackForm" method="post" action="pages/feedback.php" novalidate>
+      <form id="feedbackForm" method="post" action="/feedback" novalidate>
         <div id="nameFeedback" class="feedback red <?php echo $name_feedback_class; ?>">*Please enter your full name.</div>
         <div class="label-input-pair">
           <label for="name" class="middleLabel">*Name:</label>
-          <input type="text" name="name" id="name" value = "<?php echo htmlspecialchars($sticky_name); ?>" required/>
+          <input type="text" name="name" id="name" value = "<?php echo htmlspecialchars($sticky_name); ?>"/>
         </div>
 
         <div id="dateFeedback" class="feedback red <?php echo $date_feedback_class; ?>">*Please enter a date between 9/28/2020 and 10/04/2020.</div>
         <div class="label-input-pair">
           <label for="date" class="middleLabel">*Date of Visit:</label>
-          <input type="date" name="date" id="date" value = "<?php echo htmlspecialchars($sticky_date); ?>" required/>
+          <input type="date" name="date" id="date" value = "<?php echo htmlspecialchars($sticky_date); ?>"/>
         </div>
 
         <div id="experienceFeedback" class="feedback red <?php echo $feedback_feedback_class; ?>">*Please give us any feedback about the festival.</div>
         <div class="label-input-pair">
           <label for="experience">*Tell us what you enjoyed/what we can improve on the festival or this site (transportations, navigation, customer experiences, etc.):</label>
-          <textarea cols="36" rows="8" id="experience" name="feedback" required><?php echo htmlspecialchars($sticky_feedback); ?></textarea>
+          <textarea cols="36" rows="8" id="experience" name="feedback"><?php echo htmlspecialchars($sticky_feedback); ?></textarea>
         </div>
 
         <div class="label-input-pair">

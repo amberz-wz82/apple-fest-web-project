@@ -1,11 +1,11 @@
 html {
   box-sizing: border-box;
   /* background-color: #cfb48c; */
-  background-color: #f0d8a7;
+  background-color: #534141;
 }
 
 body {
-  background-color: #dfbaa0;
+  background-color: #dfc9b9;
   font-family: Verdana, sans-serif;
   line-height: 1.5em;
   width: 80%;
@@ -22,6 +22,7 @@ header {
   text-align: center;
   height: 22em;
   width: 100%;
+  background-color: #534141;
 }
 
 h1 {
@@ -129,11 +130,11 @@ footer {
 }
 
 footer a.top {
-  color: #b54c4c;
+  color: #923131;
 }
 
 footer a.top:focus, footer a.top:hover, footer a.top:active {
-  color: #c37b7b;
+  color: #a55353;
 }
 
 /* nav styles */
@@ -147,7 +148,7 @@ nav {
 }
 
 nav ul li a:link, nav ul li a:visited {
-  color: #f2d5bf;
+  color: #f0ebe8;
   background-color: #835642;
 }
 
@@ -179,6 +180,12 @@ nav ul li a {
   border-radius: 0.75em;
   margin: .25em;
   letter-spacing: 0.05em;
+}
+
+.current_page:link, .current_page:visited {
+  font-weight: bold;
+  color: #f0ebe8;
+  background-color: #a03232;
 }
 
 /* homepage */
@@ -256,7 +263,7 @@ em {
 }
 
 em.hashtag {
-  color: #9e5f36;
+  color: #662d04;
   font-weight: normal;
   font-style: italic;
 }
@@ -294,6 +301,12 @@ img.attractions-fleximg {
 
 p.large {
   margin: 30px 10px 30px 60px;
+  font-size: 13.5pt;
+  line-height: 1.5em;
+}
+
+p.not-found {
+  margin: 30px 60px 30px 10px;
   font-size: 13.5pt;
   line-height: 1.5em;
 }
@@ -345,11 +358,11 @@ p.link-to-map {
 }
 
 a.red {
-  color: #b54c4c;
+  color: #923131;
 }
 
 a.red:hover {
-  color: #cc7d7d;
+  color: #a55353;
 }
 
 .directions {
@@ -418,7 +431,7 @@ form {
 }
 
 .red {
-  color: #c93939;
+  color: #9c2525;
 }
 
 .feedback {

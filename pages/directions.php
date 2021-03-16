@@ -1,4 +1,8 @@
-<?php include("includes/init.php"); ?>
+<?php
+include("includes/init.php");
+$nav_directions_class = "current_page";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,7 @@
 
   <title>Apple Harvest Festival</title>
 
-  <link rel="stylesheet" type="text/css" href="styles/theme.css" media="all"/>
+  <link rel="stylesheet" type="text/css" href="public/styles/theme.css" media="all"/>
 
 </head>
 <body>
@@ -20,7 +24,7 @@
     <div class="directions">
         <div class="drive">
             <!-- Source: https://www.google.com/maps/@42.4404296,-76.4970363,15z?hl=en-US -->
-            <img src="images/directions.png" alt="Festival Map" width="380" height="300" class="attractions img-size"/>
+            <img src="public/images/directions.png" alt="Festival Map" width="380" height="300" class="attractions img-size"/>
             <a href="https://www.google.com/maps/@42.4404296,-76.4970363,15z?hl=en-US" class="leftleft-source">Source</a>
         </div>
 
