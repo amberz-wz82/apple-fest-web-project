@@ -346,4 +346,4 @@ Desktop screen size.
 
 > Which partials have customization? Explain how the customization looks in the browser.
 
-- nav.php shows a different background color for the current page in navigation bar.
+- nav.php shows a different background color for the current page's tab in navigation bar.
