@@ -327,7 +327,7 @@ None
 ### Self-Reflection (Final Submission)
 > Reflect on what you learned during this assignment. How have you improved from 1300? What things did you have trouble with?
 
-I learned how to implement both server-side and client-side form validations, especially validating inputs, sending back feedback messages, and making sticky forms using PHP. I also learned to write conditional statements in HTML to avoid hidden HTML scripts on web pages.
+I learned how to implement both server-side and client-side form validations, especially validating inputs, sending back feedback messages, and making sticky forms using PHP. I also learned to write conditional statements in HTML to avoid hidden HTML scripts on web pages. With PHP partials, I learned to not only include repetitive elements in partials, but also to customize my navigation bar so that the current page can be highlighted for the user, which is important for improving my site's usability. I learned that we could create our own version of a 404 Not Found page to provide a friendly message to the user to get back to our website, instead of leaving them on a cold, white error page. I have improved so much since 1300 from client-side to server-side website implementation, starting to actually write lines of codes that make my site dynamic. With coding also comes the challenges; it was more difficult for me to debug my PHP codes than simply HTML and CSS, and I had some technical difficulty using the PHP server in VS Code, but overall working on this project was very rewarding to me, and I cannot wait to learn further this semester.
 
 ### Grading: Mobile or Desktop (Final Submission)
 > When we grade your final site, should we grade this with a mobile screen size or a desktop screen size?

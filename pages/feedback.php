@@ -18,9 +18,9 @@ $sticky_feedback = '';
 $sticky_issues = '';
 $sticky_email = '';
 
-// form CSS classes for the form and the confirmation page
-$form_css_class = ''; // show form for default
-$confirmation_css_class = 'hidden'; // hide confirmation page for default
+// form show initial state
+$show_form = True;
+$show_confirmation = False;
 
 // set feedback message CSS classes to hidden for default
 $name_feedback_class = 'hidden';
@@ -68,9 +68,9 @@ if (isset($_POST["submit"])) {
   }
 
   if ($form_valid) {
-    // if form is valid
-    $confirmation_css_class = ''; // show confirmation page
-    $form_css_class = 'hidden'; // hide the feedback form
+     // if form is valid
+    $show_form = False; // hide form
+    $show_confirmation = True; // show confirmation page
     if ( !empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL) ) {
       $email_confirm = " at $email";
     }
@@ -102,13 +102,16 @@ if (isset($_POST["submit"])) {
 
     <h2 class="title">Feedback Form</h2>
 
-    <section class="confirmation <?php echo $confirmation_css_class; ?>">
+    <?php if ($show_confirmation) { ?>
+    <section class="confirmation">
       <h3 class="alignMiddle">Feedback Submission Confirmation</h3>
       <p>Thank you <strong><?php echo htmlspecialchars($name); ?></strong>! Your opinion is very valuable to us, and we can't wait to read your feedback about improving our future Apple Festivals!</p>
       <p>If you experienced any issues at the festival, don't worry! We will contact you within the next 24 hours through email<strong><?php echo htmlspecialchars($email_confirm); ?></strong>.</p>
     </section>
+    <?php } ?>
 
-    <section class="<?php echo $form_css_class; ?>">
+    <?php if ($show_form) { ?>
+    <section>
       <h3 class="alignMiddle">Please provide any feedback you have for us!</h3>
       <p class="red alignMiddle">*Required Field</p>
 
@@ -145,6 +148,7 @@ if (isset($_POST["submit"])) {
         <button type="submit" name="submit" id="submit">Submit</button>
       </form>
     </section>
+    <?php } ?>
 
     <?php include("includes/footer.php"); ?>
 
