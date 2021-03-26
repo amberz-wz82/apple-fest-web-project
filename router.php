@@ -11,6 +11,7 @@ function check_php_version()
 function config_php_errors()
 {
   // error reporting the same for all students
+  ini_set('error_log', NULL);
   ini_set('display_startup_errors', 1);
   ini_set('display_errors', 0);
   error_reporting(E_ALL);
