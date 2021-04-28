@@ -11,14 +11,5 @@
         "localhost:3000",
         "router.php"
     ],
-    "php-project.useNativeExecutablePath": false,
-    "homepage": "https://amberz-wz82.github.io/info2300-serverside-web-project/",
-    "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-    }
+    "php-project.useNativeExecutablePath": false
 }
