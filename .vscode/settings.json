@@ -11,5 +11,6 @@
         "localhost:3000",
         "router.php"
     ],
-    "php-project.useNativeExecutablePath": false
+    "php-project.useNativeExecutablePath": false,
+    "homepage": "https://amberz-wz82.github.io/info2300-serverside-web-project/"
 }
