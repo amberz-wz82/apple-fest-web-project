@@ -50,7 +50,7 @@ if (preg_match('/^\/public\//', $request_uri)) {
   // serve the requested resource as-is.
   return False;
 } else if (match_routes($request_uri, ['/', '/home'])) {
-  require 'pages/index.php';
+  require 'index.php';
 } else if (match_routes($request_uri, '/map')) {
   require 'pages/map.php';
 } else if (match_routes($request_uri, '/vendors')) {
